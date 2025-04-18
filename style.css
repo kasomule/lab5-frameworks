@@ -1,0 +1,127 @@
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+
+  background-color: beige;
+  padding: 15px;
+  display: block;
+}
+
+
+.wrapper {
+  display: flex;
+  gap: 25px;
+}
+
+.wrapper section {
+  flex: 1;
+  padding: 20px;
+  background-color: aquamarine;
+
+}
+
+.sidebar ul li {
+  font-size: 25px;
+
+
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  /* Initially, run the reset animation so that when not hovered the card is in its default state */
+  animation: cardReset 0.3s forwards;
+}
+
+.card:hover {
+  animation: cardLift 0.3s forwards;
+}
+
+.card img {
+  max-width: 80px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  margin: 10px 0;
+  font-size: 1.25em;
+  color: #333;
+}
+
+.card p {
+  font-size: 0.95em;
+  color: #666;
+  line-height: 1.5;
+}
+
+.container {
+  display: flex;
+  /* required */
+  gap: 20px;
+  /* recommended: The sections will have this much space between them*/
+}
+
+.container section {
+  flex: 1;
+  /* Recommended: Each section will take up equal space */
+  padding: 20px;
+  /* recommended */
+  background-color: rgb(96 139 168 / 0.1);
+}
+
+.feature-cards .card {
+  background-color: rgba(142, 96, 168, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  /* required */
+  flex-direction: column;
+  /* recommended */
+  gap: 5px;
+  /* recommended */
+}
+
+.feature-cards .card img {
+  width: 300px;
+  height: auto;
+}
+
+.dark-theme {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.answer {
+  display: none;
+}
+
+.answer.visible {
+  display: block;
+}
+
+.clock {
+  font-size: 4rem;
+  color: #333;
+  background: #fff;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
